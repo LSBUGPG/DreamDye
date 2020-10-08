@@ -28,12 +28,14 @@ public class groundColoursTilemap : MonoBehaviour
     public bool dyed;
     public TileBase[] allTiles;
 
+    public List<TileBase> grey = new List<TileBase>();
     // Start is called before the first frame update
     void Start()
     {
 
             BoundsInt bounds = tilemap.cellBounds;
             allTiles = tilemap.GetTilesBlock(bounds);
+            int greyTiles = 0;
             for (int x = 0; x < bounds.size.x; x++)
             {
                 for (int y = 0; y < bounds.size.y; y++)
@@ -41,14 +43,20 @@ public class groundColoursTilemap : MonoBehaviour
                     TileBase tile = allTiles[x + y * bounds.size.x];
                     if (tile != null)
                     {
-                        Debug.Log("x:" + x + " y:" + y + " tile:" + tile.name);
+                        //Debug.Log("x:" + x + " y:" + y + " tile:" + tile.name);
+                        if (tile.name == "Groundgrey")
+                        {
+                            grey.Add(tile);
+                        }
                     }
                     else
                     {
-                        Debug.Log("x:" + x + " y:" + y + " tile: (null)");
+                        //Debug.Log("x:" + x + " y:" + y + " tile: (null)");
                     }
                 }
             }
+
+            Debug.LogFormat("There are {0} grey tiles", grey.Count);
        
         
     }
@@ -60,13 +68,24 @@ public class groundColoursTilemap : MonoBehaviour
     }
     private void LateUpdate()
     {
-        Vector3 hitPosition = player.transform.position + new Vector3(0f, -1f, 0f);
-        if (tilemap.GetTile(tilemap.WorldToCell(hitPosition)) == yellow)
-        {
+        // Vector3 hitPosition = player.transform.position + new Vector3(0f, -1f, 0f);
+        // if (tilemap.GetTile(tilemap.WorldToCell(hitPosition)) == yellow)
+        // {
           
-            Debug.Log("A change has occured");
-        }
+        //     Debug.Log("A change has occured");
+        // }
 
+        List<TileBase> changed = grey.FindAll((tile) => tile.name != "Groundgrey");
+        foreach (TileBase tile in changed)
+        {
+            Debug.Log("A change has occured");
+            grey.Remove(tile);
+
+            if (grey.Count == 0)
+            {
+                Debug.Log("All tiles changed!");
+            }
+        }
     }
    
     private void OnCollisionStay2D(Collision2D collision)
