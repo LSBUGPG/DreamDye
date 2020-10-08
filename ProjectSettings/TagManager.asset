@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Red Gate
+  - Blue Gate
+  - Paint Fragment
+  - Orange
+  - Yellow
+  - Green Gate
+  - Water
+  - blob2
+  - Yellow Gate
+  - Paint Bucket
+  - LeftPlatform
+  - RightPlatform
+  - BottomPlatform
+  - Top Platform
+  - RotatingPlat
+  - Camera
+  - MovingPlat
+  - Warphole
+  - Orange Gate
+  - Purple Gate
+  - Blob
+  - Blue
+  - Red
+  - blueScattered
+  - scattered
+  - redScattered
+  - redSwitch
+  - blueSwitch
+  - greenSwitch
+  - Gate
+  - blankSwitch
+  - yellowSwitch
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - pp
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

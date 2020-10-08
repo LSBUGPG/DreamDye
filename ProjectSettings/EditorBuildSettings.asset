@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 68bd279cb91be61459dedd5f43cc3203
+  - enabled: 1
+    path: Assets/Scenes/The Village.unity
+    guid: 54f24cdda1277b242bd6e0189356f838
+  - enabled: 1
+    path: Assets/Scenes/Dream 1/level1.unity
+    guid: f2c1804fd842e6e4bb4d04840169fe6d
+  - enabled: 1
+    path: Assets/Scenes/Dream 1/level2.unity
+    guid: 8ce0fa345be033141ad47886a968a3ab
+  - enabled: 1
+    path: Assets/Scenes/Dream 1/level3 - remove probably.unity
+    guid: f5b501224c5ebd7469f0780241dd158c
+  - enabled: 1
+    path: Assets/Scenes/Dream 1/level4.unity
+    guid: 1f7f8b2b25127cd44855542705c0c4e3
+  - enabled: 1
+    path: Assets/Scenes/Dream 1/level5.unity
+    guid: 86439d2117967204597a829c5495ad08
+  - enabled: 1
+    path: Assets/Scenes/Dream 2/level6.1.unity
+    guid: 8d07def27383f6a41998eb9498671e2f
+  - enabled: 1
+    path: Assets/Scenes/Dream 2/level7.unity
+    guid: 87f4d7bca4e880e4abe5ef8fb489c281
+  - enabled: 1
+    path: Assets/Scenes/Dream 2/level8.unity
+    guid: 1a96d98774de1e2449a963cfebc04443
+  - enabled: 1
+    path: Assets/Scenes/Dream 2/level9.unity
+    guid: 474c27b5e7f6b9c4ba49a276a8d58a03
+  - enabled: 1
+    path: Assets/Scenes/Levels (not yet put into a dream)/level3 1.unity
+    guid: 3265f1bdc35579145bd534e084f527e5
+  - enabled: 1
+    path: Assets/Scenes/Levels (not yet put into a dream)/level10 2.unity
+    guid: cf9b1c3f4351bc34e84dd472ae6bad23
+  - enabled: 1
+    path: Assets/Scenes/Level4.0.unity
+    guid: ee62cfbd10ae8ae46802e97ddc641db2
+  m_configObjects: {}
